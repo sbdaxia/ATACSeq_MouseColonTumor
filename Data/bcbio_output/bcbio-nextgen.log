@@ -1,0 +1,1047 @@
+[2021-09-23T00:22Z] System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml.
+[2021-09-23T00:22Z] Locale set to en_US.utf8.
+[2021-09-23T00:22Z] Timing: organize samples
+[2021-09-23T00:22Z] multiprocessing: organize_samples
+[2021-09-23T00:22Z] Using input YAML configuration: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/config/kras_colon.yaml
+[2021-09-23T00:22Z] Checking sample YAML configuration: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/config/kras_colon.yaml
+[2021-09-23T00:22Z] Retreiving program versions from /n/app/bcbio/dev/manifest/python-packages.yaml.
+[2021-09-23T00:22Z] Retreiving program versions from /n/app/bcbio/dev/manifest/r-packages.yaml.
+[2021-09-23T00:22Z] Testing minimum versions of installed programs
+[2021-09-23T00:22Z] Timing: alignment
+[2021-09-23T00:22Z] multiprocessing: prepare_sample
+[2021-09-23T00:22Z] multiprocessing: trim_sample
+[2021-09-23T00:22Z] Skipping trimming of WT_colon_rep1.
+[2021-09-23T00:22Z] Skipping trimming of WT_colon_rep2.
+[2021-09-23T00:22Z] Skipping trimming of WT_colon_rep3.
+[2021-09-23T00:22Z] Skipping trimming of Kras_colon_rep1.
+[2021-09-23T00:22Z] Skipping trimming of Kras_colon_rep2.
+[2021-09-23T00:22Z] Skipping trimming of Kras_colon_rep3.
+[2021-09-23T00:22Z] Skipping trimming of WT_tumor_rep1.
+[2021-09-23T00:22Z] Skipping trimming of WT_tumor_rep2.
+[2021-09-23T00:22Z] Skipping trimming of WT_tumor_rep3.
+[2021-09-23T00:22Z] Skipping trimming of Kras_tumor_rep1.
+[2021-09-23T00:22Z] Skipping trimming of Kras_tumor_rep2.
+[2021-09-23T00:22Z] Skipping trimming of Kras_tumor_rep3.
+[2021-09-23T00:22Z] multiprocessing: disambiguate_split
+[2021-09-23T00:22Z] multiprocessing: process_alignment
+[2021-10-01T08:46Z] Timing: disambiguation
+[2021-10-01T08:46Z] multiprocessing: clean_chipseq_alignment
+[2021-10-01T23:11Z] Timing: peakcalling
+[2021-10-01T23:11Z] multiprocessing: peakcalling
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] Running peak calling with macs2 on the NF fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-NF.bam.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:11Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:14Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:14Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:14Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:14Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:14Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:14Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:15Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:15Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:15Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:16Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:17Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:17Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:17Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:17Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:17Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:18Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:18Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:18Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:18Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:18Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:18Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:18Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:18Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:18Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:19Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:19Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:19Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:19Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:19Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:19Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:19Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:19Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:19Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:19Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:19Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:19Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:19Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:19Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:19Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:19Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:19Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep3/Kras_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:19Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:20Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:20Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:20Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:20Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:20Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep2/Kras_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:20Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:20Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:20Z] Running peak calling with macs2 on the MN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-MN.bam.
+[2021-10-01T23:20Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:20Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:20Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:20Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:21Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:21Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:21Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:21Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:21Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:21Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:21Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:21Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:21Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_colon_rep1/Kras_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:21Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:21Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:21Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep2/WT_colon_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:22Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:22Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:23Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep2/WT_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:23Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep3/WT_colon_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:23Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_colon_rep1/WT_colon_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:23Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep3/WT_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:23Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:23Z] Running peak calling with macs2 on the DN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-DN.bam.
+[2021-10-01T23:23Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:23Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep1/Kras_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:23Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:23Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:23Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:23Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:24Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:24Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:24Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:24Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:24Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/WT_tumor_rep1/WT_tumor_rep1-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:24Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:24Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:24Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep2/Kras_tumor_rep2-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:24Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:28Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:28Z] Running peak calling with macs2 on the TN fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates-TN.bam.
+[2021-10-01T23:28Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:29Z] Counting alignments in /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:29Z] Running peak calling with macs2 on the full fraction of /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/align/Kras_tumor_rep3/Kras_tumor_rep3-sort-shifted_chrom-noMito.unique-noduplicates.bam.
+[2021-10-01T23:29Z] ATAC-seq specified, using narrow peak settings.
+[2021-10-01T23:47Z] Calling consensus peaks on /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_colon_rep1-NF/WT_colon_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_colon_rep2-NF/WT_colon_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_colon_rep3-NF/WT_colon_rep3-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_colon_rep1-NF/Kras_colon_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_colon_rep2-NF/Kras_colon_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_colon_rep3-NF/Kras_colon_rep3-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_tumor_rep1-NF/WT_tumor_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_tumor_rep2-NF/WT_tumor_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_tumor_rep3-NF/WT_tumor_rep3-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_tumor_rep1-NF/Kras_tumor_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_tumor_rep2-NF/Kras_tumor_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_tumor_rep3-NF/Kras_tumor_rep3-NF_peaks.narrowPeak
+[2021-10-01T23:47Z] Removing low quality peaks from /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_colon_rep1-NF/WT_colon_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_colon_rep2-NF/WT_colon_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_colon_rep3-NF/WT_colon_rep3-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_colon_rep1-NF/Kras_colon_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_colon_rep2-NF/Kras_colon_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_colon_rep3-NF/Kras_colon_rep3-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_tumor_rep1-NF/WT_tumor_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_tumor_rep2-NF/WT_tumor_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/WT_tumor_rep3-NF/WT_tumor_rep3-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_tumor_rep1-NF/Kras_tumor_rep1-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_tumor_rep2-NF/Kras_tumor_rep2-NF_peaks.narrowPeak,/n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/macs2/Kras_tumor_rep3-NF/Kras_tumor_rep3-NF_peaks.narrowPeak
+[2021-10-01T23:50Z] multiprocessing: run_chipseq_count
+[2021-10-02T00:07Z] Combining count files into /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/consensus/consensus-counts.tsv.
+[2021-10-02T00:07Z] Timing: quality control
+[2021-10-02T00:07Z] multiprocessing: pipeline_summary
+[2021-10-02T00:07Z] QC: WT_colon_rep1 ataqv
+[2021-10-02T00:35Z] QC: WT_colon_rep1 chipqc
+[2021-10-02T00:37Z] QC: WT_colon_rep1 fastqc
+[2021-10-02T00:39Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/WT_colon_rep1/fastqc/fastqc_report.html
+[2021-10-02T00:39Z] QC: WT_colon_rep1 samtools
+[2021-10-02T00:45Z] QC: WT_colon_rep2 ataqv
+[2021-10-02T01:12Z] QC: WT_colon_rep2 chipqc
+[2021-10-02T01:13Z] QC: WT_colon_rep2 fastqc
+[2021-10-02T01:16Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/WT_colon_rep2/fastqc/fastqc_report.html
+[2021-10-02T01:16Z] QC: WT_colon_rep2 samtools
+[2021-10-02T01:22Z] QC: WT_colon_rep3 ataqv
+[2021-10-02T01:46Z] QC: WT_colon_rep3 chipqc
+[2021-10-02T01:48Z] QC: WT_colon_rep3 fastqc
+[2021-10-02T01:51Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/WT_colon_rep3/fastqc/fastqc_report.html
+[2021-10-02T01:51Z] QC: WT_colon_rep3 samtools
+[2021-10-02T01:57Z] QC: Kras_colon_rep1 ataqv
+[2021-10-02T02:14Z] QC: Kras_colon_rep1 chipqc
+[2021-10-02T02:15Z] QC: Kras_colon_rep1 fastqc
+[2021-10-02T02:19Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/Kras_colon_rep1/fastqc/fastqc_report.html
+[2021-10-02T02:19Z] QC: Kras_colon_rep1 samtools
+[2021-10-02T02:25Z] QC: Kras_colon_rep2 ataqv
+[2021-10-02T02:41Z] QC: Kras_colon_rep2 chipqc
+[2021-10-02T02:42Z] QC: Kras_colon_rep2 fastqc
+[2021-10-02T02:45Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/Kras_colon_rep2/fastqc/fastqc_report.html
+[2021-10-02T02:45Z] QC: Kras_colon_rep2 samtools
+[2021-10-02T02:51Z] QC: Kras_colon_rep3 ataqv
+[2021-10-02T03:05Z] QC: Kras_colon_rep3 chipqc
+[2021-10-02T03:06Z] QC: Kras_colon_rep3 fastqc
+[2021-10-02T03:10Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/Kras_colon_rep3/fastqc/fastqc_report.html
+[2021-10-02T03:10Z] QC: Kras_colon_rep3 samtools
+[2021-10-02T03:16Z] QC: WT_tumor_rep1 ataqv
+[2021-10-02T03:53Z] QC: WT_tumor_rep1 chipqc
+[2021-10-02T03:54Z] QC: WT_tumor_rep1 fastqc
+[2021-10-02T03:57Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/WT_tumor_rep1/fastqc/fastqc_report.html
+[2021-10-02T03:57Z] QC: WT_tumor_rep1 samtools
+[2021-10-02T04:05Z] QC: WT_tumor_rep2 ataqv
+[2021-10-02T04:39Z] QC: WT_tumor_rep2 chipqc
+[2021-10-02T04:40Z] QC: WT_tumor_rep2 fastqc
+[2021-10-02T04:44Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/WT_tumor_rep2/fastqc/fastqc_report.html
+[2021-10-02T04:44Z] QC: WT_tumor_rep2 samtools
+[2021-10-02T04:51Z] QC: WT_tumor_rep3 ataqv
+[2021-10-02T05:25Z] QC: WT_tumor_rep3 chipqc
+[2021-10-02T05:26Z] QC: WT_tumor_rep3 fastqc
+[2021-10-02T05:29Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/WT_tumor_rep3/fastqc/fastqc_report.html
+[2021-10-02T05:29Z] QC: WT_tumor_rep3 samtools
+[2021-10-02T05:35Z] QC: Kras_tumor_rep1 ataqv
+[2021-10-02T06:04Z] QC: Kras_tumor_rep1 chipqc
+[2021-10-02T06:05Z] QC: Kras_tumor_rep1 fastqc
+[2021-10-02T06:08Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/Kras_tumor_rep1/fastqc/fastqc_report.html
+[2021-10-02T06:08Z] QC: Kras_tumor_rep1 samtools
+[2021-10-02T06:14Z] QC: Kras_tumor_rep2 ataqv
+[2021-10-02T06:47Z] QC: Kras_tumor_rep2 chipqc
+[2021-10-02T06:48Z] QC: Kras_tumor_rep2 fastqc
+[2021-10-02T06:51Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/Kras_tumor_rep2/fastqc/fastqc_report.html
+[2021-10-02T06:51Z] QC: Kras_tumor_rep2 samtools
+[2021-10-02T06:58Z] QC: Kras_tumor_rep3 ataqv
+[2021-10-02T07:38Z] QC: Kras_tumor_rep3 chipqc
+[2021-10-02T07:40Z] QC: Kras_tumor_rep3 fastqc
+[2021-10-02T07:43Z] Produced HTML report /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/work/qc/Kras_tumor_rep3/fastqc/fastqc_report.html
+[2021-10-02T07:43Z] QC: Kras_tumor_rep3 samtools
+[2021-10-02T07:51Z] multiprocessing: qsignature_summary
+[2021-10-02T07:51Z] summarize metadata
+[2021-10-02T07:51Z] multiprocessing: multiqc_summary
+[2021-10-02T07:51Z] summarize target information
+[2021-10-02T07:51Z] summarize fastqc
+[2021-10-02T07:51Z] summarize metrics
+[2021-10-02T07:52Z] Timing: upload
+[2021-10-02T07:52Z] multiprocessing: upload_samples
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/ataqv/WT_colon_rep1.ataqv.json.gz
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/fastqc_report.html
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/WT_colon_rep1.zip
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/fastqc/fastqc_data.txt
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/samtools/WT_colon_rep1-idxstats.txt
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/qc/samtools/WT_colon_rep1.txt
+[2021-10-02T07:52Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-ready.bam
+[2021-10-02T07:53Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-ready.bam.bai
+[2021-10-02T07:53Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-ready.bw
+[2021-10-02T07:53Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-NF.bam
+[2021-10-02T07:53Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-MN.bam
+[2021-10-02T07:53Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-DN.bam
+[2021-10-02T07:53Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-TN.bam
+[2021-10-02T07:53Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/WT_colon_rep1-full.bam
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-NF_control_lambda.bdg
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-NF_control_lambda.bdg.gz
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-NF_peaks.narrowPeak
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-NF_peaks_macs2.xls
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-NF_summits.bed
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-NF_treat_pileup.bdg
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-NF_treat_pileup.bdg.gz
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-MN_control_lambda.bdg
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-MN_control_lambda.bdg.gz
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-MN_peaks.narrowPeak
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-MN_peaks_macs2.xls
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-MN_summits.bed
+[2021-10-02T07:54Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-MN_treat_pileup.bdg
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-MN_treat_pileup.bdg.gz
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-DN_control_lambda.bdg
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-DN_control_lambda.bdg.gz
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-DN_peaks.narrowPeak
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-DN_peaks_macs2.xls
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-DN_summits.bed
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-DN_treat_pileup.bdg
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-DN_treat_pileup.bdg.gz
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-TN_control_lambda.bdg
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-TN_control_lambda.bdg.gz
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-TN_peaks.narrowPeak
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-TN_peaks_macs2.xls
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-TN_summits.bed
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-TN_treat_pileup.bdg
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-TN_treat_pileup.bdg.gz
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-full_control_lambda.bdg
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-full_control_lambda.bdg.gz
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-full_peaks.narrowPeak
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-full_peaks_macs2.xls
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-full_summits.bed
+[2021-10-02T07:55Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-full_treat_pileup.bdg
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep1/macs2/WT_colon_rep1-full_treat_pileup.bdg.gz
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/ataqv/WT_colon_rep2.ataqv.json.gz
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/fastqc_report.html
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/WT_colon_rep2.zip
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/fastqc/fastqc_data.txt
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/samtools/WT_colon_rep2-idxstats.txt
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/qc/samtools/WT_colon_rep2.txt
+[2021-10-02T07:56Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-ready.bam
+[2021-10-02T07:57Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-ready.bam.bai
+[2021-10-02T07:57Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-ready.bw
+[2021-10-02T07:57Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-NF.bam
+[2021-10-02T07:57Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-MN.bam
+[2021-10-02T07:57Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-DN.bam
+[2021-10-02T07:57Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-TN.bam
+[2021-10-02T07:57Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/WT_colon_rep2-full.bam
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-NF_control_lambda.bdg
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-NF_control_lambda.bdg.gz
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-NF_peaks.narrowPeak
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-NF_peaks_macs2.xls
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-NF_summits.bed
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-NF_treat_pileup.bdg
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-NF_treat_pileup.bdg.gz
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-MN_control_lambda.bdg
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-MN_control_lambda.bdg.gz
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-MN_peaks.narrowPeak
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-MN_peaks_macs2.xls
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-MN_summits.bed
+[2021-10-02T07:58Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-MN_treat_pileup.bdg
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-MN_treat_pileup.bdg.gz
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-DN_control_lambda.bdg
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-DN_control_lambda.bdg.gz
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-DN_peaks.narrowPeak
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-DN_peaks_macs2.xls
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-DN_summits.bed
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-DN_treat_pileup.bdg
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-DN_treat_pileup.bdg.gz
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-TN_control_lambda.bdg
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-TN_control_lambda.bdg.gz
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-TN_peaks.narrowPeak
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-TN_peaks_macs2.xls
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-TN_summits.bed
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-TN_treat_pileup.bdg
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-TN_treat_pileup.bdg.gz
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-full_control_lambda.bdg
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-full_control_lambda.bdg.gz
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-full_peaks.narrowPeak
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-full_peaks_macs2.xls
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-full_summits.bed
+[2021-10-02T07:59Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-full_treat_pileup.bdg
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep2/macs2/WT_colon_rep2-full_treat_pileup.bdg.gz
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/ataqv/WT_colon_rep3.ataqv.json.gz
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/fastqc_report.html
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/WT_colon_rep3.zip
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/samtools/WT_colon_rep3-idxstats.txt
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/qc/samtools/WT_colon_rep3.txt
+[2021-10-02T08:00Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-ready.bam
+[2021-10-02T08:01Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-ready.bam.bai
+[2021-10-02T08:01Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-ready.bw
+[2021-10-02T08:01Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-NF.bam
+[2021-10-02T08:01Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-MN.bam
+[2021-10-02T08:01Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-DN.bam
+[2021-10-02T08:01Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-TN.bam
+[2021-10-02T08:01Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/WT_colon_rep3-full.bam
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-NF_control_lambda.bdg
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-NF_control_lambda.bdg.gz
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-NF_peaks.narrowPeak
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-NF_peaks_macs2.xls
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-NF_summits.bed
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-NF_treat_pileup.bdg
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-NF_treat_pileup.bdg.gz
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-MN_control_lambda.bdg
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-MN_control_lambda.bdg.gz
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-MN_peaks.narrowPeak
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-MN_peaks_macs2.xls
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-MN_summits.bed
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-MN_treat_pileup.bdg
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-MN_treat_pileup.bdg.gz
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-DN_control_lambda.bdg
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-DN_control_lambda.bdg.gz
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-DN_peaks.narrowPeak
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-DN_peaks_macs2.xls
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-DN_summits.bed
+[2021-10-02T08:02Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-DN_treat_pileup.bdg
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-DN_treat_pileup.bdg.gz
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-TN_control_lambda.bdg
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-TN_control_lambda.bdg.gz
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-TN_peaks.narrowPeak
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-TN_peaks_macs2.xls
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-TN_summits.bed
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-TN_treat_pileup.bdg
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-TN_treat_pileup.bdg.gz
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-full_control_lambda.bdg
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-full_control_lambda.bdg.gz
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-full_peaks.narrowPeak
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-full_peaks_macs2.xls
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-full_summits.bed
+[2021-10-02T08:03Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-full_treat_pileup.bdg
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_colon_rep3/macs2/WT_colon_rep3-full_treat_pileup.bdg.gz
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/ataqv/Kras_colon_rep1.ataqv.json.gz
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/fastqc_report.html
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Kras_colon_rep1.zip
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/samtools/Kras_colon_rep1-idxstats.txt
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/qc/samtools/Kras_colon_rep1.txt
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-ready.bam
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-ready.bam.bai
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-ready.bw
+[2021-10-02T08:04Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-NF.bam
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-MN.bam
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-DN.bam
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-TN.bam
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/Kras_colon_rep1-full.bam
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-NF_control_lambda.bdg
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-NF_control_lambda.bdg.gz
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-NF_peaks.narrowPeak
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-NF_peaks_macs2.xls
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-NF_summits.bed
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-NF_treat_pileup.bdg
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-NF_treat_pileup.bdg.gz
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-MN_control_lambda.bdg
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-MN_control_lambda.bdg.gz
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-MN_peaks.narrowPeak
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-MN_peaks_macs2.xls
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-MN_summits.bed
+[2021-10-02T08:05Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-MN_treat_pileup.bdg
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-MN_treat_pileup.bdg.gz
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-DN_control_lambda.bdg
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-DN_control_lambda.bdg.gz
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-DN_peaks.narrowPeak
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-DN_peaks_macs2.xls
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-DN_summits.bed
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-DN_treat_pileup.bdg
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-DN_treat_pileup.bdg.gz
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-TN_control_lambda.bdg
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-TN_control_lambda.bdg.gz
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-TN_peaks.narrowPeak
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-TN_peaks_macs2.xls
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-TN_summits.bed
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-TN_treat_pileup.bdg
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-TN_treat_pileup.bdg.gz
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-full_control_lambda.bdg
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-full_control_lambda.bdg.gz
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-full_peaks.narrowPeak
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-full_peaks_macs2.xls
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-full_summits.bed
+[2021-10-02T08:06Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-full_treat_pileup.bdg
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep1/macs2/Kras_colon_rep1-full_treat_pileup.bdg.gz
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/ataqv/Kras_colon_rep2.ataqv.json.gz
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/fastqc_report.html
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Kras_colon_rep2.zip
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/samtools/Kras_colon_rep2-idxstats.txt
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/qc/samtools/Kras_colon_rep2.txt
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-ready.bam
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-ready.bam.bai
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-ready.bw
+[2021-10-02T08:07Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-NF.bam
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-MN.bam
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-DN.bam
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-TN.bam
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/Kras_colon_rep2-full.bam
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-NF_control_lambda.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-NF_control_lambda.bdg.gz
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-NF_peaks.narrowPeak
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-NF_peaks_macs2.xls
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-NF_summits.bed
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-NF_treat_pileup.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-NF_treat_pileup.bdg.gz
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-MN_control_lambda.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-MN_control_lambda.bdg.gz
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-MN_peaks.narrowPeak
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-MN_peaks_macs2.xls
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-MN_summits.bed
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-MN_treat_pileup.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-MN_treat_pileup.bdg.gz
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-DN_control_lambda.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-DN_control_lambda.bdg.gz
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-DN_peaks.narrowPeak
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-DN_peaks_macs2.xls
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-DN_summits.bed
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-DN_treat_pileup.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-DN_treat_pileup.bdg.gz
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-TN_control_lambda.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-TN_control_lambda.bdg.gz
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-TN_peaks.narrowPeak
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-TN_peaks_macs2.xls
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-TN_summits.bed
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-TN_treat_pileup.bdg
+[2021-10-02T08:08Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-TN_treat_pileup.bdg.gz
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-full_control_lambda.bdg
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-full_control_lambda.bdg.gz
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-full_peaks.narrowPeak
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-full_peaks_macs2.xls
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-full_summits.bed
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-full_treat_pileup.bdg
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep2/macs2/Kras_colon_rep2-full_treat_pileup.bdg.gz
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/ataqv/Kras_colon_rep3.ataqv.json.gz
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/fastqc_report.html
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Kras_colon_rep3.zip
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/samtools/Kras_colon_rep3-idxstats.txt
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/qc/samtools/Kras_colon_rep3.txt
+[2021-10-02T08:09Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-ready.bam
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-ready.bam.bai
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-ready.bw
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-NF.bam
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-MN.bam
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-DN.bam
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-TN.bam
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/Kras_colon_rep3-full.bam
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-NF_control_lambda.bdg
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-NF_control_lambda.bdg.gz
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-NF_peaks.narrowPeak
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-NF_peaks_macs2.xls
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-NF_summits.bed
+[2021-10-02T08:10Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-NF_treat_pileup.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-NF_treat_pileup.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-MN_control_lambda.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-MN_control_lambda.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-MN_peaks.narrowPeak
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-MN_peaks_macs2.xls
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-MN_summits.bed
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-MN_treat_pileup.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-MN_treat_pileup.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-DN_control_lambda.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-DN_control_lambda.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-DN_peaks.narrowPeak
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-DN_peaks_macs2.xls
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-DN_summits.bed
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-DN_treat_pileup.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-DN_treat_pileup.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-TN_control_lambda.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-TN_control_lambda.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-TN_peaks.narrowPeak
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-TN_peaks_macs2.xls
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-TN_summits.bed
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-TN_treat_pileup.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-TN_treat_pileup.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-full_control_lambda.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-full_control_lambda.bdg.gz
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-full_peaks.narrowPeak
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-full_peaks_macs2.xls
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-full_summits.bed
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-full_treat_pileup.bdg
+[2021-10-02T08:11Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_colon_rep3/macs2/Kras_colon_rep3-full_treat_pileup.bdg.gz
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/ataqv/WT_tumor_rep1.ataqv.json.gz
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/fastqc_report.html
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/WT_tumor_rep1.zip
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/samtools/WT_tumor_rep1-idxstats.txt
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/qc/samtools/WT_tumor_rep1.txt
+[2021-10-02T08:12Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-ready.bam
+[2021-10-02T08:13Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-ready.bam.bai
+[2021-10-02T08:13Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-ready.bw
+[2021-10-02T08:13Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-NF.bam
+[2021-10-02T08:13Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-MN.bam
+[2021-10-02T08:13Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-DN.bam
+[2021-10-02T08:13Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-TN.bam
+[2021-10-02T08:13Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/WT_tumor_rep1-full.bam
+[2021-10-02T08:14Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-NF_control_lambda.bdg
+[2021-10-02T08:14Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-NF_control_lambda.bdg.gz
+[2021-10-02T08:14Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-NF_peaks.narrowPeak
+[2021-10-02T08:14Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-NF_peaks_macs2.xls
+[2021-10-02T08:14Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-NF_summits.bed
+[2021-10-02T08:14Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-NF_treat_pileup.bdg
+[2021-10-02T08:14Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-NF_treat_pileup.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-MN_control_lambda.bdg
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-MN_control_lambda.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-MN_peaks.narrowPeak
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-MN_peaks_macs2.xls
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-MN_summits.bed
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-MN_treat_pileup.bdg
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-MN_treat_pileup.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-DN_control_lambda.bdg
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-DN_control_lambda.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-DN_peaks.narrowPeak
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-DN_peaks_macs2.xls
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-DN_summits.bed
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-DN_treat_pileup.bdg
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-DN_treat_pileup.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-TN_control_lambda.bdg
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-TN_control_lambda.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-TN_peaks.narrowPeak
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-TN_peaks_macs2.xls
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-TN_summits.bed
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-TN_treat_pileup.bdg
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-TN_treat_pileup.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-full_control_lambda.bdg
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-full_control_lambda.bdg.gz
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-full_peaks.narrowPeak
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-full_peaks_macs2.xls
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-full_summits.bed
+[2021-10-02T08:15Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-full_treat_pileup.bdg
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep1/macs2/WT_tumor_rep1-full_treat_pileup.bdg.gz
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/ataqv/WT_tumor_rep2.ataqv.json.gz
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/fastqc_report.html
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/WT_tumor_rep2.zip
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/samtools/WT_tumor_rep2-idxstats.txt
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/qc/samtools/WT_tumor_rep2.txt
+[2021-10-02T08:16Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-ready.bam
+[2021-10-02T08:17Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-ready.bam.bai
+[2021-10-02T08:17Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-ready.bw
+[2021-10-02T08:17Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-NF.bam
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-MN.bam
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-DN.bam
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-TN.bam
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/WT_tumor_rep2-full.bam
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-NF_control_lambda.bdg
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-NF_control_lambda.bdg.gz
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-NF_peaks.narrowPeak
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-NF_peaks_macs2.xls
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-NF_summits.bed
+[2021-10-02T08:18Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-NF_treat_pileup.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-NF_treat_pileup.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-MN_control_lambda.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-MN_control_lambda.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-MN_peaks.narrowPeak
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-MN_peaks_macs2.xls
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-MN_summits.bed
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-MN_treat_pileup.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-MN_treat_pileup.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-DN_control_lambda.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-DN_control_lambda.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-DN_peaks.narrowPeak
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-DN_peaks_macs2.xls
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-DN_summits.bed
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-DN_treat_pileup.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-DN_treat_pileup.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-TN_control_lambda.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-TN_control_lambda.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-TN_peaks.narrowPeak
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-TN_peaks_macs2.xls
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-TN_summits.bed
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-TN_treat_pileup.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-TN_treat_pileup.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-full_control_lambda.bdg
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-full_control_lambda.bdg.gz
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-full_peaks.narrowPeak
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-full_peaks_macs2.xls
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-full_summits.bed
+[2021-10-02T08:19Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-full_treat_pileup.bdg
+[2021-10-02T08:20Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep2/macs2/WT_tumor_rep2-full_treat_pileup.bdg.gz
+[2021-10-02T08:20Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/ataqv/WT_tumor_rep3.ataqv.json.gz
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/fastqc_report.html
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/WT_tumor_rep3.zip
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/samtools/WT_tumor_rep3-idxstats.txt
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/qc/samtools/WT_tumor_rep3.txt
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-ready.bam
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-ready.bam.bai
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-ready.bw
+[2021-10-02T08:21Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-NF.bam
+[2021-10-02T08:22Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-MN.bam
+[2021-10-02T08:22Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-DN.bam
+[2021-10-02T08:22Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-TN.bam
+[2021-10-02T08:22Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/WT_tumor_rep3-full.bam
+[2021-10-02T08:22Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-NF_control_lambda.bdg
+[2021-10-02T08:22Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-NF_control_lambda.bdg.gz
+[2021-10-02T08:22Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-NF_peaks.narrowPeak
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-NF_peaks_macs2.xls
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-NF_summits.bed
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-NF_treat_pileup.bdg
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-NF_treat_pileup.bdg.gz
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-MN_control_lambda.bdg
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-MN_control_lambda.bdg.gz
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-MN_peaks.narrowPeak
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-MN_peaks_macs2.xls
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-MN_summits.bed
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-MN_treat_pileup.bdg
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-MN_treat_pileup.bdg.gz
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-DN_control_lambda.bdg
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-DN_control_lambda.bdg.gz
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-DN_peaks.narrowPeak
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-DN_peaks_macs2.xls
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-DN_summits.bed
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-DN_treat_pileup.bdg
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-DN_treat_pileup.bdg.gz
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-TN_control_lambda.bdg
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-TN_control_lambda.bdg.gz
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-TN_peaks.narrowPeak
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-TN_peaks_macs2.xls
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-TN_summits.bed
+[2021-10-02T08:23Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-TN_treat_pileup.bdg
+[2021-10-02T08:24Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-TN_treat_pileup.bdg.gz
+[2021-10-02T08:24Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-full_control_lambda.bdg
+[2021-10-02T08:24Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-full_control_lambda.bdg.gz
+[2021-10-02T08:24Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-full_peaks.narrowPeak
+[2021-10-02T08:24Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-full_peaks_macs2.xls
+[2021-10-02T08:24Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-full_summits.bed
+[2021-10-02T08:24Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-full_treat_pileup.bdg
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/WT_tumor_rep3/macs2/WT_tumor_rep3-full_treat_pileup.bdg.gz
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/ataqv/Kras_tumor_rep1.ataqv.json.gz
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/fastqc_report.html
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Kras_tumor_rep1.zip
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/samtools/Kras_tumor_rep1-idxstats.txt
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/qc/samtools/Kras_tumor_rep1.txt
+[2021-10-02T08:25Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-ready.bam
+[2021-10-02T08:26Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-ready.bam.bai
+[2021-10-02T08:26Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-ready.bw
+[2021-10-02T08:26Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-NF.bam
+[2021-10-02T08:26Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-MN.bam
+[2021-10-02T08:26Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-DN.bam
+[2021-10-02T08:26Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-TN.bam
+[2021-10-02T08:26Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/Kras_tumor_rep1-full.bam
+[2021-10-02T08:27Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-NF_control_lambda.bdg
+[2021-10-02T08:27Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-NF_control_lambda.bdg.gz
+[2021-10-02T08:27Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-NF_peaks.narrowPeak
+[2021-10-02T08:27Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-NF_peaks_macs2.xls
+[2021-10-02T08:27Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-NF_summits.bed
+[2021-10-02T08:27Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-NF_treat_pileup.bdg
+[2021-10-02T08:27Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-NF_treat_pileup.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-MN_control_lambda.bdg
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-MN_control_lambda.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-MN_peaks.narrowPeak
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-MN_peaks_macs2.xls
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-MN_summits.bed
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-MN_treat_pileup.bdg
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-MN_treat_pileup.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-DN_control_lambda.bdg
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-DN_control_lambda.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-DN_peaks.narrowPeak
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-DN_peaks_macs2.xls
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-DN_summits.bed
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-DN_treat_pileup.bdg
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-DN_treat_pileup.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-TN_control_lambda.bdg
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-TN_control_lambda.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-TN_peaks.narrowPeak
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-TN_peaks_macs2.xls
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-TN_summits.bed
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-TN_treat_pileup.bdg
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-TN_treat_pileup.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-full_control_lambda.bdg
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-full_control_lambda.bdg.gz
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-full_peaks.narrowPeak
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-full_peaks_macs2.xls
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-full_summits.bed
+[2021-10-02T08:28Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-full_treat_pileup.bdg
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep1/macs2/Kras_tumor_rep1-full_treat_pileup.bdg.gz
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/ataqv/Kras_tumor_rep2.ataqv.json.gz
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/fastqc_report.html
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Kras_tumor_rep2.zip
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/samtools/Kras_tumor_rep2-idxstats.txt
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/qc/samtools/Kras_tumor_rep2.txt
+[2021-10-02T08:29Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-ready.bam
+[2021-10-02T08:30Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-ready.bam.bai
+[2021-10-02T08:30Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-ready.bw
+[2021-10-02T08:30Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-NF.bam
+[2021-10-02T08:31Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-MN.bam
+[2021-10-02T08:31Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-DN.bam
+[2021-10-02T08:31Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-TN.bam
+[2021-10-02T08:31Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/Kras_tumor_rep2-full.bam
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-NF_control_lambda.bdg
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-NF_control_lambda.bdg.gz
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-NF_peaks.narrowPeak
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-NF_peaks_macs2.xls
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-NF_summits.bed
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-NF_treat_pileup.bdg
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-NF_treat_pileup.bdg.gz
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-MN_control_lambda.bdg
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-MN_control_lambda.bdg.gz
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-MN_peaks.narrowPeak
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-MN_peaks_macs2.xls
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-MN_summits.bed
+[2021-10-02T08:32Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-MN_treat_pileup.bdg
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-MN_treat_pileup.bdg.gz
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-DN_control_lambda.bdg
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-DN_control_lambda.bdg.gz
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-DN_peaks.narrowPeak
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-DN_peaks_macs2.xls
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-DN_summits.bed
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-DN_treat_pileup.bdg
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-DN_treat_pileup.bdg.gz
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-TN_control_lambda.bdg
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-TN_control_lambda.bdg.gz
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-TN_peaks.narrowPeak
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-TN_peaks_macs2.xls
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-TN_summits.bed
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-TN_treat_pileup.bdg
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-TN_treat_pileup.bdg.gz
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-full_control_lambda.bdg
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-full_control_lambda.bdg.gz
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-full_peaks.narrowPeak
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-full_peaks_macs2.xls
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-full_summits.bed
+[2021-10-02T08:33Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-full_treat_pileup.bdg
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep2/macs2/Kras_tumor_rep2-full_treat_pileup.bdg.gz
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/ataqv/Kras_tumor_rep3.ataqv.json.gz
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/fastqc_report.html
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Kras_tumor_rep3.zip
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Per_base_N_content.tsv
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Per_base_sequence_content.tsv
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Per_base_sequence_quality.tsv
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Per_sequence_GC_content.tsv
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Per_sequence_quality_scores.tsv
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Per_tile_sequence_quality.tsv
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/Sequence_Length_Distribution.tsv
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/fastqc/fastqc_data.txt
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/samtools/Kras_tumor_rep3-idxstats.txt
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/qc/samtools/Kras_tumor_rep3.txt
+[2021-10-02T08:34Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-ready.bam
+[2021-10-02T08:36Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-ready.bam.bai
+[2021-10-02T08:36Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-ready.bw
+[2021-10-02T08:36Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-NF.bam
+[2021-10-02T08:37Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-MN.bam
+[2021-10-02T08:37Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-DN.bam
+[2021-10-02T08:37Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-TN.bam
+[2021-10-02T08:37Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/Kras_tumor_rep3-full.bam
+[2021-10-02T08:38Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-NF_control_lambda.bdg
+[2021-10-02T08:38Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-NF_control_lambda.bdg.gz
+[2021-10-02T08:38Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-NF_peaks.narrowPeak
+[2021-10-02T08:38Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-NF_peaks_macs2.xls
+[2021-10-02T08:38Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-NF_summits.bed
+[2021-10-02T08:38Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-NF_treat_pileup.bdg
+[2021-10-02T08:39Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-NF_treat_pileup.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-MN_control_lambda.bdg
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-MN_control_lambda.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-MN_peaks.narrowPeak
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-MN_peaks_macs2.xls
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-MN_summits.bed
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-MN_treat_pileup.bdg
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-MN_treat_pileup.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-DN_control_lambda.bdg
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-DN_control_lambda.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-DN_peaks.narrowPeak
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-DN_peaks_macs2.xls
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-DN_summits.bed
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-DN_treat_pileup.bdg
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-DN_treat_pileup.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-TN_control_lambda.bdg
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-TN_control_lambda.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-TN_peaks.narrowPeak
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-TN_peaks_macs2.xls
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-TN_summits.bed
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-TN_treat_pileup.bdg
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-TN_treat_pileup.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-full_control_lambda.bdg
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-full_control_lambda.bdg.gz
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-full_peaks.narrowPeak
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-full_peaks_macs2.xls
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-full_summits.bed
+[2021-10-02T08:40Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-full_treat_pileup.bdg
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/Kras_tumor_rep3/macs2/Kras_tumor_rep3-full_treat_pileup.bdg.gz
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/programs.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/data_versions.csv
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen-commands.log
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/project-summary.yaml
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/metadata.csv
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_report.html
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/WT_colon_rep1_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/WT_tumor_rep1_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_fastqc.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_samtools_idxstats.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/Kras_tumor_rep2_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/WT_tumor_rep3_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/WT_colon_rep2_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_bcbio_metrics.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/Kras_tumor_rep3_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/Kras_colon_rep2_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/Kras_tumor_rep1_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_data.json
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_config.yaml
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/WT_colon_rep3_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc.log
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/Kras_colon_rep3_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/Kras_colon_rep1_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/report/metrics/WT_tumor_rep2_bcbio.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_general_stats.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_sources.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/seqbuster_isomirs.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_samtools_stats.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/seqbuster_mirs.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/multiqc_data/multiqc_data_final.json
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/multiqc/list_files_final.txt
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/index.html
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/css/ataqv.css
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/css/datatables.buttons.min.css
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/css/datatables.fontawesome.css
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/css/datatables.min.css
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/css/font-awesome.min.css
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/css/normalize.css
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/Kras_colon_rep1.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/Kras_colon_rep2.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/Kras_colon_rep3.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/Kras_tumor_rep1.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/Kras_tumor_rep2.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/Kras_tumor_rep3.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/WT_colon_rep1.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/WT_colon_rep2.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/WT_colon_rep3.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/WT_tumor_rep1.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/WT_tumor_rep2.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/data/WT_tumor_rep3.json.gz
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/FontAwesome.otf
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/fontawesome-webfont.eot
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/fontawesome-webfont.svg
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/fontawesome-webfont.ttf
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/fontawesome-webfont.woff
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/fontawesome-webfont.woff2
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/sourcesanspro-regular.woff
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/sourcesanspro-regularit.woff
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/sourcesanspro-semibold.woff
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/fonts/sourcesanspro-semiboldit.woff
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/js/ataqv.js
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/js/configuration.js
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/js/d3.min.js
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/js/datatables.min.js
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/ataqv/js/jszip.min.js
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/consensus/consensus.bed
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/consensus/consensus-counts.tsv
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log
+[2021-10-02T08:42Z] multiprocessing: upload_samples_project
+[2021-10-02T08:42Z] Storing in local filesystem: /n/scratch3/users/b/bs218/ATAC-Seq_Processing/kras_colon/final/2021-10-02_kras_colon/bcbio-nextgen.log

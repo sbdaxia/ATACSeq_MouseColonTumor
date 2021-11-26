@@ -1,0 +1,13 @@
+,condition,replicate,tissue,batch,phenotype
+WT_colon_rep1,WT,rep1,colon_epithelium,,
+WT_colon_rep2,WT,rep2,colon_epithelium,,
+WT_colon_rep3,WT,rep3,colon_epithelium,,
+Kras_colon_rep1,Kras,rep1,colon_epithelium,,
+Kras_colon_rep2,Kras,rep2,colon_epithelium,,
+Kras_colon_rep3,Kras,rep3,colon_epithelium,,
+WT_tumor_rep1,WT,rep1,colon_tumor,,
+WT_tumor_rep2,WT,rep2,colon_tumor,,
+WT_tumor_rep3,WT,rep3,colon_tumor,,
+Kras_tumor_rep1,Kras,rep1,colon_tumor,,
+Kras_tumor_rep2,Kras,rep2,colon_tumor,,
+Kras_tumor_rep3,Kras,rep3,colon_tumor,,

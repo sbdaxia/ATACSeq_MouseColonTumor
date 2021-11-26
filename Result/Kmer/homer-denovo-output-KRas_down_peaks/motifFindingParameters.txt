@@ -1,0 +1,1 @@
+cmd = KRas_down_ATAC_peaks_merged.bed mm10 homer-denovo-output-KRas_down_peaks -len 8 -size given -bits -cache 1000 -preparsedDir preparsed_up

@@ -1,0 +1,24 @@
+bcftools:
+  write_separate_table: true
+extra_fn_clean_trim:
+- coverage.mosdepth.region.dist
+- coverage.mosdepth.global.dist
+module_order:
+- bcbio
+- samtools
+- goleft_indexcov
+- peddy
+- bcftools
+- salmon
+- star
+- picard
+- qualimap
+- snpeff
+- bismark
+- fastqc
+- preseq
+table_columns_visible:
+  Peddy:
+    error_sex_check: false
+    family_id: false
+    sex_het_ratio: false

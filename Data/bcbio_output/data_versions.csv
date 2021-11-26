@@ -1,0 +1,11 @@
+genome,resource,version
+mm10,sranseq,20151014
+mm10,srnaseq,20190402
+mm10,problem_regions,20151028
+mm10,dbsnp,20130912
+mm10,transcripts,2018-10-10_92
+mm10,seq,ucsc-201112
+mm10,twobit,mm10
+mm10,vcfanno,20180427
+mm10,rmsk,20180319
+mm10,prioritize,20210329

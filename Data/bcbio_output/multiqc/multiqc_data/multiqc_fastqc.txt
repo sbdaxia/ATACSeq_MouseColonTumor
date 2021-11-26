@@ -1,0 +1,13 @@
+Sample	Filename	File type	Encoding	Total Sequences	Sequences flagged as poor quality	Sequence length	%GC	total_deduplicated_percentage	avg_sequence_length	basic_statistics	per_base_sequence_quality	per_tile_sequence_quality	per_sequence_quality_scores	per_base_sequence_content	per_sequence_gc_content	per_base_n_content	sequence_length_distribution	sequence_duplication_levels	overrepresented_sequences	adapter_content
+Kras_colon_rep1	Kras_colon_rep1	Conventional base calls	Sanger / Illumina 1.9	18152142.0	0.0	51.0	44.0	86.24120000010359	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+Kras_colon_rep2	Kras_colon_rep2	Conventional base calls	Sanger / Illumina 1.9	17794816.0	0.0	51.0	44.0	86.34891058045764	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+Kras_colon_rep3	Kras_colon_rep3	Conventional base calls	Sanger / Illumina 1.9	20760782.0	0.0	51.0	43.0	82.54474102540588	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+Kras_tumor_rep1	Kras_tumor_rep1	Conventional base calls	Sanger / Illumina 1.9	11580112.0	0.0	51.0	48.0	90.04314380405046	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+Kras_tumor_rep2	Kras_tumor_rep2	Conventional base calls	Sanger / Illumina 1.9	11686440.0	0.0	51.0	49.0	91.1057402703748	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+Kras_tumor_rep3	Kras_tumor_rep3	Conventional base calls	Sanger / Illumina 1.9	11387136.0	0.0	51.0	48.0	90.29127545687518	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+WT_colon_rep1	WT_colon_rep1	Conventional base calls	Sanger / Illumina 1.9	12169546.0	0.0	51.0	48.0	89.3004478999363	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+WT_colon_rep2	WT_colon_rep2	Conventional base calls	Sanger / Illumina 1.9	13323556.0	0.0	51.0	48.0	88.4408184670294	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	warn
+WT_colon_rep3	WT_colon_rep3	Conventional base calls	Sanger / Illumina 1.9	13204214.0	0.0	51.0	46.0	83.37054270190394	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+WT_tumor_rep1	WT_tumor_rep1	Conventional base calls	Sanger / Illumina 1.9	11836256.0	0.0	51.0	50.0	90.52270895372469	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+WT_tumor_rep2	WT_tumor_rep2	Conventional base calls	Sanger / Illumina 1.9	15380164.0	0.0	51.0	48.0	90.61905799845708	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	pass	pass
+WT_tumor_rep3	WT_tumor_rep3	Conventional base calls	Sanger / Illumina 1.9	12579906.0	0.0	51.0	49.0	91.45840570761004	51.0	pass	pass	pass	pass	fail	pass	pass	pass	pass	warn	pass

@@ -1,0 +1,254 @@
+---
+title: "CDF with Proteomics"
+author: "Bing Shui"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: yes
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Library set-up
+```{r message=FALSE, warning=FALSE}
+library(DESeq2)
+library(data.table)
+library(gdata)
+library(ggplot2)
+library(RColorBrewer)
+library(tidyverse)
+library(plotly)
+library(AnnotationDbi)
+library(org.Mm.eg.db)
+```
+
+# Purpose
+ - To examine if up/down-regulated proteins from KRas colonic tumor proteomics preferentially have up/down-regulated ATAC-Seq peaks
+ - To examine if up/down-regulated ATAC-Seq peaks preferrentially have up/down-regulated proteins from KRas colonic tumor proteomics
+
+# Set up function
+```{r}
+plotCDF.ggplot <- function(gene.counts, gene.sets, gene.set.labels,
+                           col = "", linetype = "", xlim = c( -1.0, 1.3 ),
+                           legend.size = 22, axistitle.size = 22, title = "Fold change log2 (Dicer KO/WT)",
+                           legend.pos = c(0.7, 0.18), geom = "step", ploc = -0.9) {
+  require(ggplot2)
+  df.log2fc <- gene.counts[,c("gene", "log2FC")]
+  #rownames(df.log2fc) <- df.log2fc$gene
+  if (length(gene.sets) != length(gene.set.labels)){
+    return("Length of gene sets doesn't match labels")
+  }
+  target.expr <- df.log2fc[df.log2fc$gene %in% gene.sets[[1]],]
+  for (i in 2:length(gene.sets)){
+    target.expr <- rbind(target.expr, df.log2fc[df.log2fc$gene %in% gene.sets[[i]],])
+  }
+
+  gene.set.counts <- c()
+  for (j in 1:length(gene.sets)){
+    gene.set.counts <- c(gene.set.counts, sum(df.log2fc$gene %in% gene.sets[[j]]))
+  }
+  
+  target.expr$Category <- rep(gene.set.labels, gene.set.counts)
+  target.expr$Category <- factor(target.expr$Category, levels = gene.set.labels)
+  
+  log2FC.values <- lapply(gene.sets, function(gene.set) {
+    gene.counts[gene.counts$gene %in% gene.set,]$log2FC
+  })
+
+  ks.pvals <- lapply(log2FC.values,
+                     function(log2FCs) {
+                       ks.test(log2FCs, log2FC.values[[1]])$p.value
+                     })
+  
+  p <- ggplot( target.expr, aes( x = log2FC, colour = Category ) ) +
+  stat_ecdf( geom = geom, aes( colour = Category, linetype = Category ), lwd = 1 ) +
+  scale_color_manual( values = col, labels = sprintf( "%s (%d)", gene.set.labels, gene.set.counts ) ) +
+  scale_linetype_manual( values = linetype, labels = sprintf( "%s (%d)", gene.set.labels, gene.set.counts ) ) +
+  # xlim() will remove data points; Be careful in the future
+  coord_cartesian( xlim = xlim ) + xlab(title) + ylab('CDF') +
+  theme_classic() + theme( legend.background = element_rect(fill = NA), 
+                           legend.title = element_blank(), 
+                           legend.position = legend.pos,
+                           legend.text = element_text(size=legend.size),
+                           legend.key.size = unit(1.5, 'lines'),
+                           axis.title.x = element_text(size=axistitle.size, margin = margin(t = 10)),
+                           axis.title.y = element_text(size=axistitle.size, margin = margin(r = 10)),
+                           axis.text=element_text(size=20),
+                           axis.line = element_line(size = 1),  #axis label size
+                           axis.ticks.length = unit(0.3, "cm")) #increase tick length
+  
+  for (k in 2:length(gene.sets)){
+    p <- p + annotate(geom = "text", x = ploc, y = 1-0.08*(k-1), hjust = 0, 
+                      label = sprintf("p = %.0e", ks.pvals[k]), 
+                      colour = col[k], size = 8)
+  }
+  print(p)
+}
+```
+# Load datasets
+```{r message=FALSE, warning=FALSE}
+# Proteomics
+protein_DGE <- read_csv("../../../../Proteomics data/colon tumor-enema model/crcMS_diff.csv")
+
+annotations <- AnnotationDbi::select(org.Mm.eg.db,
+                                           keys = protein_DGE$`Protein Id`,
+                                           columns = c("ENSEMBL"),
+                                           keytype = "UNIPROT")
+
+# Determine the indices for the non-duplicated genes
+non_duplicates <- which(duplicated(annotations$UNIPROT) == FALSE)
+
+# Return only the non-duplicated genes using indices
+annotations <- annotations[non_duplicates, ]
+
+# Check number of NAs returned
+is.na(annotations$UNIPROT) %>%
+  which() %>%
+  length()
+
+protein_DGE <- left_join(protein_DGE, annotations, by = c("Protein Id"="UNIPROT"))
+
+colnames(protein_DGE)[8] <- "gene"
+colnames(protein_DGE)[7] <- "log2FC"
+
+# ATAC-Seq
+atac_res <- read_csv("Result/ATAC_crc_Kras-WT_merged.csv")
+colnames(atac_res)[24] <- "gene"
+colnames(atac_res)[8] <- "log2FC"
+```
+
+# Sig ATAC-Seq peaks in Proteomics
+## Up-regulated ATAC-Seq peaks
+I expect general up-regulation of their target RNA
+```{r}
+cols <- c(brewer.pal(name = "Set2", n = 4))
+
+atac.up <- atac_res %>% filter(padj < 0.05 & log2FC > 0) %>% dplyr::select(gene) %>% unlist()
+atac.up <- atac.up[!is.na(atac.up)]
+plotCDF.ggplot(protein_DGE,
+               list(protein_DGE$gene, atac.up),
+               c("All genes", "Genes with ATAC-UP"),
+               col = c("grey15", cols[1]),
+               linetype = c(1, 1),
+               title = "Protein_LFC(K-Ras_G12D/WT)",
+               xlim = c(-1,2),
+               legend.size = 15)
+
+pdf("PDF_Figure/CDF_Gene with ATAC-UP in Proteomics.pdf",
+    width = 10,
+    height = 8)
+plotCDF.ggplot(protein_DGE,
+               list(protein_DGE$gene, atac.up),
+               c("All genes", "Genes with ATAC-UP"),
+               col = c("grey15", cols[1]),
+               linetype = c(1, 1),
+               title = "Protein_LFC(K-Ras_G12D/WT)",
+               xlim = c(-1,2),
+               legend.size = 15)
+dev.off()
+```
+
+## Down-regulated ATAC-Seq peaks
+I expect general down-regulation of their target RNA
+```{r}
+atac.down <- atac_res %>% filter(padj < 0.05 & log2FC < 0) %>% dplyr::select(gene) %>% unlist()
+atac.down <- atac.up[!is.na(atac.down)]
+
+plotCDF.ggplot(protein_DGE,
+               list(protein_DGE$gene, atac.down),
+               c("All genes", "Genes with ATAC-DOWN"),
+               col = c("grey15", cols[2]),
+               linetype = c(1, 1),
+               title = "Protein_LFC(K-Ras_G12D/WT)",
+               xlim = c(-1,2),
+               legend.size = 15)
+
+pdf("PDF_Figure/CDF_Gene with ATAC-DOWN in Proteomics.pdf",
+    width = 10,
+    height = 8)
+plotCDF.ggplot(protein_DGE,
+               list(protein_DGE$gene, atac.down),
+               c("All genes", "Genes with ATAC-DOWN"),
+               col = c("grey15", cols[2]),
+               linetype = c(1, 1),
+               title = "Protein_LFC(K-Ras_G12D/WT)",
+               xlim = c(-1,2),
+               legend.size = 15)
+dev.off()
+```
+
+# DEG from Proteomics in ATAC-Seq peaks
+## Up-regulated proteins in Proteomics 
+I expect general Up-regulation of these genes' ATAC-Seq peaks
+```{r}
+protein.up <- protein_DGE %>% filter(p_values < 0.05 & q_values < 0.1 & log2FC > 0) %>% dplyr::select(gene) %>% unlist()
+protein.up <- protein.up[!is.na(protein.up)]
+
+plotCDF.ggplot(atac_res,
+               list(atac_res$gene, protein.up),
+               c("All genes", "Genes with Protein-UP"),
+               col = c("grey15", cols[3]),
+               linetype = c(1, 1),
+               title = "ATAC_LFC(K-Ras_G12D/WT)",
+               xlim = c(-0.5,0.5),
+               legend.size = 15,
+               geom = "line",
+               ploc = -0.5)
+
+pdf("PDF_Figure/CDF_Gene with Protein-UP in ATACSeq.pdf",
+    width = 10,
+    height = 8)
+plotCDF.ggplot(atac_res,
+               list(atac_res$gene, protein.up),
+               c("All genes", "Genes with Protein-UP"),
+               col = c("grey15", cols[3]),
+               linetype = c(1, 1),
+               title = "ATAC_LFC(K-Ras_G12D/WT)",
+               xlim = c(-0.5,0.5),
+               legend.size = 15,
+               geom = "line",
+               ploc = -0.5)
+dev.off()
+```
+
+## Down-regulated proteins in Proteomics 
+I expect general Down-regulation of these genes' ATAC-Seq peaks
+```{r}
+protein.down <- protein_DGE %>% filter(p_values < 0.05 & q_values < 0.1 & log2FC < 0) %>% dplyr::select(gene) %>% unlist()
+protein.down <- protein.down[!is.na(protein.down)]
+
+plotCDF.ggplot(atac_res,
+               list(atac_res$gene, protein.down),
+               c("All genes", "Genes with Protein-DOWN"),
+               col = c("grey15", cols[4]),
+               linetype = c(1, 1),
+               title = "ATAC_LFC(K-Ras_G12D/WT)",
+               xlim = c(-0.5,0.5),
+               legend.size = 15,
+               geom = "line",
+               ploc = -0.5)
+
+pdf("PDF_Figure/CDF_Gene with Protein-DOWN in ATACSeq.pdf",
+    width = 10,
+    height = 8)
+plotCDF.ggplot(atac_res,
+               list(atac_res$gene, protein.down),
+               c("All genes", "Genes with Protein-DOWN"),
+               col = c("grey15", cols[4]),
+               linetype = c(1, 1),
+               title = "ATAC_LFC(K-Ras_G12D/WT)",
+               xlim = c(-0.5,0.5),
+               legend.size = 15,
+               geom = "line",
+               ploc = -0.5)
+dev.off()
+```
+
+# SessionInfo
+```{r}
+sessionInfo()
+```

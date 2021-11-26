@@ -1,0 +1,83 @@
+---
+title: "Merge ATAC peaks"
+author: "Bing Shui"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: yes
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Library set up
+```{r message=FALSE, warning=FALSE}
+library(GenomicRanges)
+library(tidyverse)
+library(plyranges)
+library(Rsubread)
+```
+
+# Load per sample peak from MACS2
+```{r message=FALSE, warning=FALSE}
+normal1_peak <- readr::read_tsv("Data/bcbio_output/raw/WT_tumor_rep1-NF_peaks.narrowPeak", col_names=c("seqnames", "start", "end", "name", "score", "strand", "signalValue", "-log10(pValue)", "-log10(qValue)", "peak")) %>% select(-strand) %>%
+  as_granges()
+
+normal2_peak <- readr::read_tsv("Data/bcbio_output/raw/WT_tumor_rep2-NF_peaks.narrowPeak", col_names=c("seqnames", "start", "end", "name", "score", "strand", "signalValue", "-log10(pValue)", "-log10(qValue)", "peak")) %>% select(-strand) %>%
+  as_granges()
+
+normal3_peak <- readr::read_tsv("Data/bcbio_output/raw/WT_tumor_rep3-NF_peaks.narrowPeak", col_names=c("seqnames", "start", "end", "name", "score", "strand", "signalValue", "-log10(pValue)", "-log10(qValue)", "peak")) %>% select(-strand) %>%
+  as_granges()
+
+kras1_peak <- readr::read_tsv("Data/bcbio_output/raw/Kras_tumor_rep1-NF_peaks.narrowPeak", col_names=c("seqnames", "start", "end", "name", "score", "strand", "signalValue", "-log10(pValue)", "-log10(qValue)", "peak")) %>% select(-strand) %>%
+  as_granges()
+
+kras2_peak <- readr::read_tsv("Data/bcbio_output/raw/Kras_tumor_rep2-NF_peaks.narrowPeak", col_names=c("seqnames", "start", "end", "name", "score", "strand", "signalValue", "-log10(pValue)", "-log10(qValue)", "peak")) %>% select(-strand) %>%
+  as_granges()
+
+kras3_peak <- readr::read_tsv("Data/bcbio_output/raw/Kras_tumor_rep3-NF_peaks.narrowPeak", col_names=c("seqnames", "start", "end", "name", "score", "strand", "signalValue", "-log10(pValue)", "-log10(qValue)", "peak")) %>% select(-strand) %>%
+  as_granges()
+```
+
+# Merge peaks
+Based on the paper, peaks within 500bp of each other were all combined.
+```{r}
+merged_peaks <- c(normal1_peak, normal2_peak, normal3_peak, kras1_peak, kras2_peak, kras3_peak) %>% GenomicRanges::reduce(min.gapwidth = 500)
+
+merged_peaks$id <- paste0(seqnames(merged_peaks), ":", start(merged_peaks), "-", end(merged_peaks))
+
+# write out a BED file of the merged peaks
+rtracklayer::export(merged_peaks, "Data/bcbio_output/merged/merged.bed")
+```
+
+# Read counts in peaks
+```{r}
+# prepare annotation file for featureCount
+merged_peaks_df <- as.data.frame(merged_peaks) %>%
+    dplyr::select(GeneID = id, Chr = seqnames,
+                  Start = start, End = end, Strand = strand)
+
+# load BAM files
+bam <- list.files("Data/bcbio_output/raw", pattern=".bam$", full.names = TRUE)
+bam <- bam[c(4:6,1:3)]
+basename(bam)
+sample_name <- c(paste0("normal_crc_rep", seq(1:3)), paste0("kras_crc_rep", seq(1:3)))
+print(sample_name)
+
+# featureCount
+peak.count <-
+    featureCounts(bam, annot.ext = merged_peaks_df,
+                  isPairedEnd = TRUE, minOverlap = 1, nthreads = 14, strandSpecific = 0)
+
+peak.count <- peak.count$counts
+colnames(peak.count) <- sample_name
+peak.count <- as.data.frame(peak.count) %>% rownames_to_column(var = "id")
+write_tsv(as.data.frame(peak.count), "Data/bcbio_output/merged/merged-counts.tsv")
+```
+
+# SessionInfo
+```{r}
+sessionInfo()
+```
